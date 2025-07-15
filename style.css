@@ -1,0 +1,86 @@
+body {
+  font-family: 'SUIT', 'Noto Sans KR', 'Apple SD Gothic Neo', Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe6f0 0%, #e0f7fa 100%);
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 420px;
+  margin: 48px auto;
+  background: #fff0faee;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px 0 rgba(255, 182, 193, 0.13), 0 1.5px 8px 0 rgba(0,0,0,0.04);
+  padding: 40px 28px 32px 28px;
+  border: 2px solid #ffe0f0;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #d16ba5;
+  font-family: 'SUIT', 'Noto Sans KR', sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+label {
+  color: #b06ab3;
+  font-weight: 500;
+  margin-bottom: 4px;
+  font-size: 1.05rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+input, select {
+  padding: 10px 12px;
+  border: 1.5px solid #f8bbd0;
+  border-radius: 10px;
+  font-size: 16px;
+  background: #fff8fb;
+  transition: border 0.2s;
+  outline: none;
+  margin-bottom: 2px;
+}
+input:focus, select:focus {
+  border: 1.5px solid #d16ba5;
+  background: #fff0fa;
+}
+button {
+  background: linear-gradient(90deg, #fcb7b7 0%, #d16ba5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px 0 rgba(255,182,193,0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+button:hover {
+  background: linear-gradient(90deg, #d16ba5 0%, #fcb7b7 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+#result {
+  margin-top: 32px;
+  background: #fff8fb;
+  border-radius: 14px;
+  padding: 22px 16px;
+  min-height: 48px;
+  font-size: 16px;
+  color: #a64ca6;
+  word-break: keep-all;
+  box-shadow: 0 1px 4px 0 rgba(255,182,193,0.07);
+  border: 1.5px solid #f8bbd0;
+}
+#school-select-area {
+  margin-bottom: 10px;
+}
+::-webkit-input-placeholder { color: #e1a6c7; }
+::-moz-placeholder { color: #e1a6c7; }
+:-ms-input-placeholder { color: #e1a6c7; }
+::placeholder { color: #e1a6c7; }
+@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css');
