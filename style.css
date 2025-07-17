@@ -79,6 +79,15 @@ button:hover {
 #school-select-area {
   margin-bottom: 10px;
 }
+#school-select {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 ::-webkit-input-placeholder { color: #e1a6c7; }
 ::-moz-placeholder { color: #e1a6c7; }
 :-ms-input-placeholder { color: #e1a6c7; }
