@@ -1,10 +1,20 @@
 let API_KEY = ''
 
-async function loadApiKey() {
-  const res = await fetch('api.txt'); // api.txt에서 키 불러오기
-  API_KEY = (await res.text()).trim(); // 불러온 키의 개행 제거
+// DOMContentLoaded를 통해서 html이 완전히 로드된 후에 스크립트 실행하도록 수정
+window.addEventListener('DOMContentLoaded', () => {   
+  loadApiKey();
+});
 
-  initialize();   // 키를 불러온 뒤에 사용할 함수 호출
+async function loadApiKey() {
+  try {
+    const res = await fetch('api.txt');
+    if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
+    const text = await res.text();
+    API_KEY = text.trim();
+    initialize();
+  } catch (e) {
+    console.error("API_KEY 로딩 실패", e);            // 로딩 실패하면 콘솔에 에러 메시지가 뜨도록 추가
+  }
 }
 
 async function initialize() {
